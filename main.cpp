@@ -39,12 +39,13 @@ int main(){
    
     IMAGE img,img2,imgtemp;
     IMAGE ready, set, plant;
-    IMAGE test;
+    IMAGE test, shadow;
     loadimage(&img, _T("Resources/BG1.jpg"));
     loadimage(&img2, _T("Resources/BG1_Game.jpg")); 
     loadimage(&ready, _T("Resources/ready.png")); 
     loadimage(&set, _T("Resources/set.png")); 
     loadimage(&plant, _T("Resources/plant.png")); 
+    loadimage(&shadow, _T("Resources/shadow.png")); 
     loadimage(&test, _T("Resources/test.gif")); 
     putimage(0, 0, 800, 600, &img, 0 ,0);
 
@@ -64,6 +65,7 @@ int main(){
         if(now - start >= 5500) break;
 
         imgtemp = img;
+        alpha_composite(&imgtemp, 1180, 415, &shadow);
         alpha_composite(&imgtemp, 1100, 300, &zombie[((int)(now - start) / 4 / 16) % 15]);
         
         if(now - start <= 1500)//过去
@@ -77,8 +79,9 @@ int main(){
     
     putimage(0, 0, 800, 600, &img, 220 ,0);
     Sleep(500);
-    IMAGE csd, temp;
+    IMAGE csd, csd_1, temp;
     loadimage(&csd, _T("Resources/csd.png")); 
+    loadimage(&csd_1, _T("Resources/csd_1.png")); 
 
     start = get_ms();
     while(1){
@@ -131,8 +134,25 @@ int main(){
     } //ready set plant 动画
 
     Sleep(500);
+
+
     PlaySound(_T("Resources\\music\\Ultimate Battle1.wav"), NULL, SND_FILENAME | SND_ASYNC);
-    Sleep(10000);
+    IMAGE background;
+    start = get_ms();
+    long long nowms;
+    while(1)
+    {
+        nowms = get_ms();
+        if(nowms - lastframe < 16) continue;
+        lastframe = nowms;
+
+        background = img2;
+
+
+        putimage(0, 0, 800, 600, &img2, 220 ,0);
+        putimage(103, 63, 500, 15, &csd_1, 3 + (((nowms - start) / 32) % 512) ,0);
+    }
+    
 
     closegraph();
     return 0;    
