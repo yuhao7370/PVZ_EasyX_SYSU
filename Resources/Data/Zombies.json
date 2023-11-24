@@ -1,0 +1,658 @@
+{
+  "BackupDancer": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Attack": {
+        "isgif": true,
+        "framecount": 31
+      },
+      "BackupDancer": {
+        "isgif": true,
+        "framecount": 15
+      },
+      "BoomDie": {
+        "isgif": true,
+        "framecount": 21
+      },
+      "Dancing": {
+        "isgif": true,
+        "framecount": 13
+      },
+      "Die": {
+        "isgif": true,
+        "framecount": 44
+      },
+      "Head": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "LostHead": {
+        "isgif": true,
+        "framecount": 13
+      },
+      "LostHeadAttack": {
+        "isgif": true,
+        "framecount": 31
+      },
+      "LostHeadDancing": {
+        "isgif": true,
+        "framecount": 13
+      },
+      "Mound": {
+        "isgif": true,
+        "framecount": 21
+      }
+    }
+  },
+  "BalloonZombie": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "1": {
+        "isgif": true,
+        "framecount": 13
+      },
+      "Attack": {
+        "isgif": true,
+        "framecount": 25
+      },
+      "Attack2": {
+        "isgif": true,
+        "framecount": 25
+      },
+      "Boom": {
+        "isgif": true,
+        "framecount": 21
+      },
+      "Boom2": {
+        "isgif": true,
+        "framecount": 21
+      },
+      "Die": {
+        "isgif": true,
+        "framecount": 28
+      },
+      "Drop": {
+        "isgif": true,
+        "framecount": 29
+      },
+      "Head": {
+        "isgif": true,
+        "framecount": 8
+      },
+      "Walk": {
+        "isgif": true,
+        "framecount": 41
+      },
+      "Walk2": {
+        "isgif": true,
+        "framecount": 41
+      }
+    }
+  },
+  "BucketheadZombie": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "1": {
+        "isgif": true,
+        "framecount": 15
+      },
+      "BucketheadZombie": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "BucketheadZombieAttack": {
+        "isgif": true,
+        "framecount": 40
+      }
+    }
+  },
+  "ConeheadZombie": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "1": {
+        "isgif": true,
+        "framecount": 15
+      },
+      "ConeheadZombie": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "ConeheadZombieAttack": {
+        "isgif": true,
+        "framecount": 40
+      }
+    }
+  },
+  "DolphinRiderZombie": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "1": {
+        "isgif": true,
+        "framecount": 15
+      },
+      "Attack": {
+        "isgif": true,
+        "framecount": 42
+      },
+      "Die": {
+        "isgif": true,
+        "framecount": 7
+      },
+      "Die2": {
+        "isgif": true,
+        "framecount": 39
+      },
+      "Head": {
+        "isgif": true,
+        "framecount": 10
+      },
+      "Jump": {
+        "isgif": true,
+        "framecount": 46
+      },
+      "Jump2": {
+        "isgif": true,
+        "framecount": 8
+      },
+      "Jump3": {
+        "isgif": true,
+        "framecount": 13
+      },
+      "Walk1": {
+        "isgif": true,
+        "framecount": 39
+      },
+      "Walk2": {
+        "isgif": true,
+        "framecount": 7
+      },
+      "Walk3": {
+        "isgif": true,
+        "framecount": 42
+      },
+      "Walk4": {
+        "isgif": true,
+        "framecount": 39
+      }
+    }
+  },
+  "DuckyTubeZombie1": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "1": {
+        "isgif": true,
+        "framecount": 15
+      },
+      "Attack": {
+        "isgif": true,
+        "framecount": 40
+      },
+      "Die": {
+        "isgif": true,
+        "framecount": 23
+      },
+      "Walk1": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "Walk2": {
+        "isgif": true,
+        "framecount": 30
+      },
+      "ZombieHead": {
+        "isgif": true,
+        "framecount": 13
+      }
+    }
+  },
+  "DuckyTubeZombie2": {
+    "items": {
+      "Attack": {
+        "isgif": true,
+        "framecount": 40
+      },
+      "Walk1": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "Walk2": {
+        "isgif": true,
+        "framecount": 42
+      }
+    }
+  },
+  "DuckyTubeZombie3": {
+    "items": {
+      "Attack": {
+        "isgif": true,
+        "framecount": 40
+      },
+      "Walk1": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "Walk2": {
+        "isgif": true,
+        "framecount": 42
+      }
+    }
+  },
+  "DuckyTubeZombie4": {
+    "items": {
+      "Attack": {
+        "isgif": true,
+        "framecount": 33
+      },
+      "Walk1": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "Walk2": {
+        "isgif": true,
+        "framecount": 42
+      }
+    }
+  },
+  "Events": {
+    "items": {
+      "BoomDie": {
+        "isgif": true,
+        "framecount": 21
+      }
+    }
+  },
+  "FlagZombie": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "FlagZombie": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "FlagZombieAttack": {
+        "isgif": true,
+        "framecount": 40
+      },
+      "FlagZombieLostHead": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "FlagZombieLostHeadAttack": {
+        "isgif": true,
+        "framecount": 40
+      }
+    }
+  },
+  "FootballZombie": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "1": {
+        "isgif": true,
+        "framecount": 16
+      },
+      "Attack": {
+        "isgif": true,
+        "framecount": 36
+      },
+      "Die": {
+        "isgif": true,
+        "framecount": 18
+      },
+      "FootballZombie": {
+        "isgif": true,
+        "framecount": 30
+      },
+      "LostHead": {
+        "isgif": true,
+        "framecount": 30
+      },
+      "LostHeadAttack": {
+        "isgif": true,
+        "framecount": 36
+      },
+      "OrnLost": {
+        "isgif": true,
+        "framecount": 30
+      },
+      "OrnLostAttack": {
+        "isgif": true,
+        "framecount": 36
+      }
+    }
+  },
+  "Imp": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "1": {
+        "isgif": true,
+        "framecount": 25
+      },
+      "Zombie": {
+        "isgif": true,
+        "framecount": 33
+      },
+      "ZombieAttack": {
+        "isgif": true,
+        "framecount": 27
+      },
+      "ZombieDie": {
+        "isgif": true,
+        "framecount": 22
+      },
+      "ZombieHead": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "ZombieLostHead": {
+        "isgif": true,
+        "framecount": 33
+      },
+      "ZombieLostHeadAttack": {
+        "isgif": true,
+        "framecount": 27
+      }
+    }
+  },
+  "JackinTheBoxZombie": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "1": {
+        "isgif": true,
+        "framecount": 16
+      },
+      "Attack": {
+        "isgif": true,
+        "framecount": 15
+      },
+      "Boom": {
+        "isgif": true,
+        "framecount": 6
+      },
+      "BoomDie": {
+        "isgif": true,
+        "framecount": 21
+      },
+      "Die": {
+        "isgif": true,
+        "framecount": 23
+      },
+      "LostHead": {
+        "isgif": true,
+        "framecount": 19
+      },
+      "LostHeadAttack": {
+        "isgif": true,
+        "framecount": 15
+      },
+      "OpenBox": {
+        "isgif": true,
+        "framecount": 16
+      },
+      "Walk": {
+        "isgif": true,
+        "framecount": 19
+      }
+    }
+  },
+  "NewspaperZombie": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "1": {
+        "isgif": true,
+        "framecount": 19
+      },
+      "BoomDie": {
+        "isgif": true,
+        "framecount": 21
+      },
+      "Die": {
+        "isgif": true,
+        "framecount": 36
+      },
+      "Head": {
+        "isgif": true,
+        "framecount": 10
+      },
+      "HeadAttack0": {
+        "isgif": true,
+        "framecount": 24
+      },
+      "HeadAttack1": {
+        "isgif": true,
+        "framecount": 24
+      },
+      "HeadWalk0": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "HeadWalk1": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "LostHeadAttack0": {
+        "isgif": true,
+        "framecount": 24
+      },
+      "LostHeadAttack1": {
+        "isgif": true,
+        "framecount": 24
+      },
+      "LostHeadWalk0": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "LostHeadWalk1": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "LostNewspaper": {
+        "isgif": true,
+        "framecount": 13
+      }
+    }
+  },
+  "PoleVaultingZombie": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "1": {
+        "isgif": true,
+        "framecount": 13
+      },
+      "BoomDie": {
+        "isgif": true,
+        "framecount": 21
+      },
+      "PoleVaultingZombie": {
+        "isgif": true,
+        "framecount": 37
+      },
+      "PoleVaultingZombieAttack": {
+        "isgif": true,
+        "framecount": 28
+      },
+      "PoleVaultingZombieDie": {
+        "isgif": true,
+        "framecount": 27
+      },
+      "PoleVaultingZombieHead": {
+        "isgif": true,
+        "framecount": 8
+      },
+      "PoleVaultingZombieJump": {
+        "isgif": true,
+        "framecount": 29
+      },
+      "PoleVaultingZombieJump2": {
+        "isgif": true,
+        "framecount": 13
+      },
+      "PoleVaultingZombieLostHead": {
+        "isgif": true,
+        "framecount": 10
+      },
+      "PoleVaultingZombieLostHeadAttack": {
+        "isgif": true,
+        "framecount": 28
+      },
+      "PoleVaultingZombieLostHeadWalk": {
+        "isgif": true,
+        "framecount": 45
+      },
+      "PoleVaultingZombieWalk": {
+        "isgif": true,
+        "framecount": 45
+      }
+    }
+  },
+  "ScreenDoorZombie": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "1": {
+        "isgif": true,
+        "framecount": 15
+      },
+      "HeadAttack1": {
+        "isgif": true,
+        "framecount": 40
+      },
+      "HeadWalk1": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "LostHeadAttack1": {
+        "isgif": true,
+        "framecount": 40
+      },
+      "LostHeadWalk1": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "ScreenDoorZombie": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "ScreenDoorZombieAttack": {
+        "isgif": true,
+        "framecount": 40
+      }
+    }
+  },
+  "SnorkelZombie": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "1": {
+        "isgif": true,
+        "framecount": 22
+      },
+      "Attack": {
+        "isgif": true,
+        "framecount": 25
+      },
+      "Die": {
+        "isgif": true,
+        "framecount": 34
+      },
+      "Head": {
+        "isgif": true,
+        "framecount": 6
+      },
+      "Jump": {
+        "isgif": true,
+        "framecount": 14
+      },
+      "Risk": {
+        "isgif": true,
+        "framecount": 12
+      },
+      "Sink": {
+        "isgif": true,
+        "framecount": 7
+      },
+      "Walk1": {
+        "isgif": true,
+        "framecount": 37
+      },
+      "Walk2": {
+        "isgif": true,
+        "framecount": 7
+      }
+    }
+  },
+  "Zombie": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "1": {
+        "isgif": true,
+        "framecount": 15
+      },
+      "Zombie": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "ZombieAttack": {
+        "isgif": true,
+        "framecount": 40
+      },
+      "ZombieDie": {
+        "isgif": true,
+        "framecount": 39
+      },
+      "ZombieHead": {
+        "isgif": true,
+        "framecount": 12
+      },
+      "ZombieLostHead": {
+        "isgif": true,
+        "framecount": 47
+      },
+      "ZombieLostHeadAttack": {
+        "isgif": true,
+        "framecount": 40
+      }
+    }
+  }
+}

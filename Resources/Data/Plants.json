@@ -1,0 +1,634 @@
+{
+  "Attack_Events": {
+    "items": {
+      "PB-10": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "PB00": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "PB01": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "PB10": {
+        "isgif": true,
+        "framecount": 13
+      },
+      "PeaBulletHit": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "PeaBulletHit1": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "PeaBulletHit2": {
+        "isgif": true,
+        "framecount": 4
+      },
+      "ShroomBullet": {
+        "isgif": true,
+        "framecount": 11
+      },
+      "ShroomBulletHit": {
+        "isgif": true,
+        "framecount": 1
+      }
+    }
+  },
+  "CherryBomb": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Boom": {
+        "isgif": true,
+        "framecount": 13
+      },
+      "CherryBomb": {
+        "isgif": true,
+        "framecount": 14
+      }
+    }
+  },
+  "Chomper": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Chomper": {
+        "isgif": true,
+        "framecount": 25
+      },
+      "ChomperAttack": {
+        "isgif": true,
+        "framecount": 25
+      },
+      "ChomperDigest": {
+        "isgif": true,
+        "framecount": 16
+      }
+    }
+  },
+  "CoffeeBean": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "CoffeeBean": {
+        "isgif": true,
+        "framecount": 9
+      },
+      "CoffeeBeanEat": {
+        "isgif": true,
+        "framecount": 14
+      }
+    }
+  },
+  "FlowerPot": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "FlowerPot": {
+        "isgif": true,
+        "framecount": 13
+      }
+    }
+  },
+  "FumeShroom": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "FumeShroom": {
+        "isgif": true,
+        "framecount": 17
+      },
+      "FumeShroomAttack": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "FumeShroomBullet": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "FumeShroomSleep": {
+        "isgif": true,
+        "framecount": 17
+      }
+    }
+  },
+  "Garlic": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Garlic": {
+        "isgif": true,
+        "framecount": 15
+      },
+      "Garlic_body2": {
+        "isgif": true,
+        "framecount": 15
+      },
+      "Garlic_body3": {
+        "isgif": true,
+        "framecount": 15
+      }
+    }
+  },
+  "GatlingPea": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "GatlingPea": {
+        "isgif": true,
+        "framecount": 13
+      }
+    }
+  },
+  "GloomShroom": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "GloomShroom": {
+        "isgif": true,
+        "framecount": 19
+      },
+      "GloomShroomAttack": {
+        "isgif": true,
+        "framecount": 16
+      },
+      "GloomShroomBullet": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "GloomShroomSleep": {
+        "isgif": true,
+        "framecount": 19
+      }
+    }
+  },
+  "GraveBuster": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "GraveBuster": {
+        "isgif": true,
+        "framecount": 28
+      }
+    }
+  },
+  "HypnoShroom": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "HypnoShroom": {
+        "isgif": true,
+        "framecount": 20
+      },
+      "HypnoShroomSleep": {
+        "isgif": true,
+        "framecount": 20
+      }
+    }
+  },
+  "IceShroom": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "IceShroom": {
+        "isgif": true,
+        "framecount": 17
+      },
+      "IceShroomSleep": {
+        "isgif": true,
+        "framecount": 17
+      },
+      "icetrap": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Snow": {
+        "isgif": true,
+        "framecount": 1
+      }
+    }
+  },
+  "Jalapeno": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Jalapeno": {
+        "isgif": true,
+        "framecount": 13
+      },
+      "JalapenoAttack": {
+        "isgif": true,
+        "framecount": 13
+      }
+    }
+  },
+  "LilyPad": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "LilyPad": {
+        "isgif": true,
+        "framecount": 1
+      }
+    }
+  },
+  "MagneticmuShroom": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Shrubbery": {
+        "isgif": true,
+        "framecount": 29
+      },
+      "ShrubberyBoom": {
+        "isgif": true,
+        "framecount": 35
+      }
+    }
+  },
+  "Peashooter": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Peashooter": {
+        "isgif": true,
+        "framecount": 25
+      }
+    }
+  },
+  "Plantern": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Plantern": {
+        "isgif": true,
+        "framecount": 20
+      }
+    }
+  },
+  "PotatoMine": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "ExplosionSpudow": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "PotatoMine": {
+        "isgif": true,
+        "framecount": 11
+      },
+      "PotatoMineNotReady": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "PotatoMine_mashed": {
+        "isgif": true,
+        "framecount": 1
+      }
+    }
+  },
+  "PuffShroom": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "PuffShroom": {
+        "isgif": true,
+        "framecount": 17
+      },
+      "PuffShroomSleep": {
+        "isgif": true,
+        "framecount": 17
+      }
+    }
+  },
+  "PumpkinHead": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "PumpkinHead": {
+        "isgif": true,
+        "framecount": 21
+      },
+      "PumpkinHead1": {
+        "isgif": true,
+        "framecount": 21
+      },
+      "PumpkinHead2": {
+        "isgif": true,
+        "framecount": 21
+      },
+      "Pumpkin_back": {
+        "isgif": true,
+        "framecount": 21
+      },
+      "pumpkin_damage1": {
+        "isgif": true,
+        "framecount": 21
+      },
+      "Pumpkin_damage2": {
+        "isgif": true,
+        "framecount": 21
+      }
+    }
+  },
+  "Repeater": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Repeater": {
+        "isgif": true,
+        "framecount": 25
+      }
+    }
+  },
+  "ScaredyShroom": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "ScaredyShroom": {
+        "isgif": true,
+        "framecount": 16
+      },
+      "ScaredyShroomCry": {
+        "isgif": true,
+        "framecount": 12
+      },
+      "ScaredyShroomSleep": {
+        "isgif": true,
+        "framecount": 16
+      }
+    }
+  },
+  "SeaShroom": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "SeaShroom": {
+        "isgif": true,
+        "framecount": 25
+      },
+      "SeaShroomSleep": {
+        "isgif": true,
+        "framecount": 25
+      }
+    }
+  },
+  "SnowPea": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "SnowPea": {
+        "isgif": true,
+        "framecount": 25
+      }
+    }
+  },
+  "Spikerock": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "2": {
+        "isgif": true,
+        "framecount": 15
+      },
+      "3": {
+        "isgif": true,
+        "framecount": 15
+      },
+      "Spikerock": {
+        "isgif": true,
+        "framecount": 15
+      }
+    }
+  },
+  "Spikeweed": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Spikeweed": {
+        "isgif": true,
+        "framecount": 21
+      }
+    }
+  },
+  "SplitPea": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "SplitPea": {
+        "isgif": true,
+        "framecount": 14
+      }
+    }
+  },
+  "Squash": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Squash": {
+        "isgif": true,
+        "framecount": 19
+      },
+      "SquashAttack": {
+        "isgif": true,
+        "framecount": 9
+      }
+    }
+  },
+  "Starfruit": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Star": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Starfruit": {
+        "isgif": true,
+        "framecount": 17
+      }
+    }
+  },
+  "SunFlower": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "SunFlower": {
+        "isgif": true,
+        "framecount": 25
+      },
+      "SunFlower1": {
+        "isgif": true,
+        "framecount": 25
+      }
+    }
+  },
+  "SunShroom": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "SunShroom": {
+        "isgif": true,
+        "framecount": 12
+      },
+      "SunShroom2": {
+        "isgif": true,
+        "framecount": 12
+      },
+      "SunShroomSleep": {
+        "isgif": true,
+        "framecount": 10
+      }
+    }
+  },
+  "TallNut": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "TallNut": {
+        "isgif": true,
+        "framecount": 17
+      },
+      "TallnutCracked1": {
+        "isgif": true,
+        "framecount": 17
+      },
+      "TallnutCracked2": {
+        "isgif": true,
+        "framecount": 17
+      }
+    }
+  },
+  "Threepeater": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Threepeater": {
+        "isgif": true,
+        "framecount": 16
+      }
+    }
+  },
+  "Torchwood": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "Torchwood": {
+        "isgif": true,
+        "framecount": 21
+      }
+    }
+  },
+  "WallNut": {
+    "items": {
+      "0": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "1": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "2": {
+        "isgif": true,
+        "framecount": 1
+      },
+      "BoomWallNutRoll": {
+        "isgif": true,
+        "framecount": 8
+      },
+      "HugeWallNutRoll": {
+        "isgif": true,
+        "framecount": 8
+      },
+      "WallNut": {
+        "isgif": true,
+        "framecount": 17
+      },
+      "WallNutRoll": {
+        "isgif": true,
+        "framecount": 13
+      },
+      "Wallnut_cracked1": {
+        "isgif": true,
+        "framecount": 17
+      },
+      "Wallnut_cracked2": {
+        "isgif": true,
+        "framecount": 17
+      }
+    }
+  }
+}
