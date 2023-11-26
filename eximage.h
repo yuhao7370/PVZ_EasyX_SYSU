@@ -14,10 +14,27 @@ void loadImageSequence(std::vector<IMAGE>& images, const std::string& path, int 
     for (int i = 0; i < frames; i++) {
         std::string str = path + "/frame_" + std::to_string(i) + ".png";
         loadimage(&images[i], str.c_str());
-        std::cout << "Successfully loaded image: " << str << std::endl;
+        // std::cout << "Successfully loaded image: " << str << std::endl;
     }
 }  
 
+IMAGE* crop_image(IMAGE* srcimg, int x1, int y1, int x2, int y2) {
+    // 计算裁剪区域的宽度和高度
+    int crop_width = x2 - x1;
+    int crop_height = y2 - y1;
+
+    // 创建新的 IMAGE 对象，用于存储裁剪后的图像
+    IMAGE* cropped_img = new IMAGE(crop_width, crop_height);
+
+    // 获取源图像和裁剪后图像的 HDC
+    HDC srcDC = GetImageHDC(srcimg);
+    HDC croppedDC = GetImageHDC(cropped_img);
+
+    // 使用 BitBlt 函数将裁剪后的图像绘制到新的 IMAGE 对象上
+    BitBlt(croppedDC, 0, 0, crop_width, crop_height, srcDC, x1, y1, SRCCOPY);
+
+    return cropped_img;
+}
 void alpha_composite(IMAGE* dstimg, int x, int y, IMAGE* srcimg) //同Pillow的 img.alpha_composite
 {
     HDC dstDC = GetImageHDC(dstimg);

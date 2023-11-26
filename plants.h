@@ -6,6 +6,7 @@ public:
     bool CanSpwanBullet;
     int ShootInterval;
     int x, y;
+    int pixelx, pixely;
 
     Plant(int id, int health, int damage, bool CanSpwanBullet, int ShootInterval, int x, int y) : 
         id(id),
@@ -19,6 +20,10 @@ public:
 
     void attack(Zombie& zombie) {
         zombie.takeDamage(damage);
+    }
+
+    void takeDamage(int damage) {
+        health -= damage;
     }
 };
 
