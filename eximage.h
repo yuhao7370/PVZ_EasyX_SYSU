@@ -1,10 +1,12 @@
 #include <graphics.h>  
 #include <math.h>
 #include <conio.h>
+#include <gdiplus.h>
 #pragma comment( lib, "MSIMG32.LIB")
+#pragma comment(lib, "gdiplus.lib")
 
 #define  PI 3.1415926535897932
-
+using namespace Gdiplus;
 // int WindowWidth, WindowHeight;
 // WindowWidth = 800;
 // WindowHeight = 600;
@@ -70,4 +72,3 @@ IMAGE* scaleImage(IMAGE* srcimg, double scaleFactor) {
     StretchBlt(destDC, 0, 0, destWidth, destHeight, srcDC, 0, 0, srcWidth, srcHeight, SRCCOPY);
     return destimg;
 }
-
