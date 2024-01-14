@@ -1,12 +1,5 @@
 #include <chrono>
 
-long long get_ms(){
-    auto now = std::chrono::system_clock::now();
-    auto now_ms = std::chrono::time_point_cast<std::chrono::milliseconds>(now);
-    auto value = now_ms.time_since_epoch().count();
-    return (long long)(value);
-}
-
 void fillArray(int arr[], int size, int type = 0) {
     if(type == 1){
         const int counts[] = {8, 4, 4};
@@ -27,3 +20,17 @@ void fillArray(int arr[], int size, int type = 0) {
         std::random_shuffle(arr, arr + size);
     }
 }  
+
+// 播放音频文件，生成一个随机别名
+void PlayAudio(const std::string& audioFilePath) {
+    // 生成随机别名
+    int randomNumber = rand() * rand();
+    std::string alias = "sound_" + std::to_string(randomNumber);
+
+    // 打开和播放音频文件
+    std::string command = "open " + audioFilePath + " alias " + alias;
+    mciSendStringA(command.c_str(), NULL, 0, NULL);
+
+    command = "play " + alias;
+    mciSendStringA(command.c_str(), NULL, 0, NULL);
+}

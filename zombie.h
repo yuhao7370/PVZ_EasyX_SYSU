@@ -1,3 +1,33 @@
+std::vector<IMAGE> StandingZombie(17);              //普通僵尸
+std::vector<IMAGE> StandingConeheadZombie(17);      //路障僵尸
+std::vector<IMAGE> StandingBucketheadZombie(17);    //铁桶僵尸
+
+std::vector<IMAGE> WalkingZombie(57);              //普通僵尸
+std::vector<IMAGE> WalkingConeheadZombie(57);      //路障僵尸
+std::vector<IMAGE> WalkingBucketheadZombie(57);    //铁桶僵尸
+
+std::vector<IMAGE> ZombieAttack(57);              //普通僵尸
+std::vector<IMAGE> ConeheadZombieAttack(57);      //路障僵尸
+std::vector<IMAGE> BucketheadZombieAttack(57);    //铁桶僵尸
+
+std::vector<IMAGE> WalkingZombieCold(57);              //普通僵尸
+std::vector<IMAGE> WalkingConeheadZombieCold(57);      //路障僵尸
+std::vector<IMAGE> WalkingBucketheadZombieCold(57);    //铁桶僵尸
+
+std::vector<IMAGE> ZombieAttackCold(57);              //普通僵尸
+std::vector<IMAGE> ConeheadZombieAttackCold(57);      //路障僵尸
+std::vector<IMAGE> BucketheadZombieAttackCold(57);    //铁桶僵尸
+
+std::vector<IMAGE> ZombieLostHead(57);
+std::vector<IMAGE> ZombieLostHeadAttack(57);
+std::vector<IMAGE> ZombieDie(57);
+std::vector<IMAGE> ZombieHead(57);
+
+std::vector<IMAGE> ZombieLostHeadCold(57);
+std::vector<IMAGE> ZombieLostHeadAttackCold(57);
+std::vector<IMAGE> ZombieDieCold(57);
+std::vector<IMAGE> ZombieHeadCold(57);
+
 int ZombieLinePos[17] = { -1, 22, 122, 228, 318, 420, -1 };
 
 int ZombieWalkingOffset[57] = { 
@@ -23,7 +53,17 @@ public:
     int pixelx, pixely;
     int actualx;
     int resetflag = 0;
+    int is_cold = 0, cold_time;
+    int nowframe = 0;
+    int picframe = 5;
+    int nowframecnt = 0;
+    int attacking = 0, attackstarttime = 0;
+    int dying = 0, dyingstarttime = 0;
     long long spawntime;
+
+    int nowframeattacking = 0;
+    int picframeattacking = 5;
+    int nowframecntattacking = 0;
 
     Zombie(int id, int health, int damage, int line, long long spawntime = 0) : 
         id(id),
@@ -31,13 +71,43 @@ public:
         damage(damage), 
         line(line),
         spawntime(spawntime),
-        pixelx(800), // 1000正好是屏幕外
+        pixelx(1000), // 1000正好是屏幕外
         actualx(pixelx),
         pixely(ZombieLinePos[line]) {}
 
 
-    long long getFrame(long long nowms) {
-        return ((nowms - spawntime) / 9 / 16) % 47;
+    int getAttackingFrame(long long nowms) {
+        return nowframeattacking;
+    }
+
+    void updateAttackingFrame(long long nowms, int iscold = 0) {
+        if(is_cold) picframeattacking = 2;
+        else picframeattacking = 1;
+
+        if(nowframecntattacking >= picframeattacking){
+            nowframecntattacking = 0;
+            ++nowframeattacking;
+        }
+        else{
+            nowframecntattacking++;
+        }
+
+        nowframeattacking %= 40;
+    }
+
+    void updateFrame(long long nowms, int iscold = 0) {
+        if(is_cold) picframe = 9;
+        else picframe = 5;
+
+        if(nowframecnt == picframe){
+            nowframecnt = 0;
+            ++nowframe;
+        }
+        else{
+            nowframecnt++;
+        }
+
+        nowframe %= 47;
     }
 
     void takeDamage(int damage) {
@@ -47,15 +117,15 @@ public:
 
 class NormalZombie : public Zombie {
 public:
-    NormalZombie(int line, long long spawntime) : Zombie(1, 300, 20, line, spawntime) {}
+    NormalZombie(int line, long long spawntime) : Zombie(1, 181, 45, line, spawntime) {}
 };
 
 class ConeheadZombie : public Zombie {
 public:
-    ConeheadZombie(int line, long long spawntime) : Zombie(2, 560, 20, line, spawntime) {}
+    ConeheadZombie(int line, long long spawntime) : Zombie(2, 370+181, 45, line, spawntime) {}
 };
 
 class BucketheadZombie : public Zombie {
 public:
-    BucketheadZombie(int line, long long spawntime) : Zombie(3, 1100, 20, line, spawntime) {}
+    BucketheadZombie(int line, long long spawntime) : Zombie(3, 1100+181, 45, line, spawntime) {}
 };

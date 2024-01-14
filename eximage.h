@@ -35,25 +35,30 @@ IMAGE* crop_image(IMAGE* srcimg, int x1, int y1, int x2, int y2) {
     // 使用 BitBlt 函数将裁剪后的图像绘制到新的 IMAGE 对象上
     BitBlt(croppedDC, 0, 0, crop_width, crop_height, srcDC, x1, y1, SRCCOPY);
 
+    // 释放资源
+    ReleaseDC(NULL, srcDC);
+    ReleaseDC(NULL, croppedDC);
+
     return cropped_img;
 }
-void alpha_composite(IMAGE* dstimg, int x, int y, IMAGE* srcimg) //同Pillow的 img.alpha_composite
+
+void alpha_composite(IMAGE* dstimg, int x, int y, IMAGE* srcimg, BYTE alpha = 255) //同Pillow的 img.alpha_composite
 {
     HDC dstDC = GetImageHDC(dstimg);
     HDC srcDC = GetImageHDC(srcimg);
     int w = srcimg->getwidth();
     int h = srcimg->getheight();
-    BLENDFUNCTION bf = { AC_SRC_OVER, 0, 255, AC_SRC_ALPHA };
+    BLENDFUNCTION bf = { AC_SRC_OVER, 0, alpha, AC_SRC_ALPHA };
     AlphaBlend(dstDC, x, y, w, h, srcDC, 0, 0, w, h, bf);
 }
 
-void alpha_composite_middle(IMAGE* dstimg, int x, int y, IMAGE* srcimg) //alpha_composite 自动居中 anchor = mm
+void alpha_composite_middle(IMAGE* dstimg, int x, int y, IMAGE* srcimg, BYTE alpha = 255) //alpha_composite 自动居中 anchor = mm
 {
     HDC dstDC = GetImageHDC(dstimg);
     HDC srcDC = GetImageHDC(srcimg);
     int w = srcimg->getwidth();
     int h = srcimg->getheight();
-    BLENDFUNCTION bf = { AC_SRC_OVER, 0, 255, AC_SRC_ALPHA };
+    BLENDFUNCTION bf = { AC_SRC_OVER, 0, alpha, AC_SRC_ALPHA };
     AlphaBlend(dstDC, x - w/2, y - h/2, w, h, srcDC, 0, 0, w, h, bf);
 }
 
